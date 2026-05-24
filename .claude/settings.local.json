@@ -7,7 +7,9 @@
       "PowerShell(& \"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\" add .)",
       "WebFetch(domain:github.com)",
       "PowerShell(& \"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\" push -u origin main)",
-      "PowerShell(New-Item *)"
+      "PowerShell(New-Item *)",
+      "PowerShell(& \"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\" push origin main)",
+      "PowerShell(npm *)"
     ]
   }
 }

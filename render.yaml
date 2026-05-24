@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: bluesky-eval
+    runtime: python
+    region: singapore
+    plan: free
+    buildCommand: ""
+    startCommand: gunicorn backend.main:app -k uvicorn.workers.UvicornWorker -w 1 --bind 0.0.0.0:$PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12"
