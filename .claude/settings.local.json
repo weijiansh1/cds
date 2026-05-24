@@ -4,7 +4,10 @@
       "PowerShell(winget install *)",
       "PowerShell(git *)",
       "PowerShell(& \"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\" init)",
-      "PowerShell(& \"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\" add .)"
+      "PowerShell(& \"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\" add .)",
+      "WebFetch(domain:github.com)",
+      "PowerShell(& \"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\" push -u origin main)",
+      "PowerShell(New-Item *)"
     ]
   }
 }
