@@ -9,7 +9,14 @@
       "PowerShell(& \"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\" push -u origin main)",
       "PowerShell(New-Item *)",
       "PowerShell(& \"C:\\\\Program Files\\\\Git\\\\bin\\\\git.exe\" push origin main)",
-      "PowerShell(npm *)"
+      "PowerShell(npm *)",
+      "PowerShell(pip install *)",
+      "WebSearch",
+      "PowerShell(netlify login *)",
+      "PowerShell($name = \"bluesky-eval-\" + \\(Get-Date -Format \"yyyyMMdd-HHmmss\"\\); Write-Output \"Trying name: $name\"; netlify sites:create --name $name 2>&1)",
+      "PowerShell(netlify deploy *)",
+      "PowerShell(netlify init *)",
+      "PowerShell(vercel login *)"
     ]
   }
 }

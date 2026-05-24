@@ -3,9 +3,17 @@ from __future__ import annotations
 import sqlite3
 from pathlib import Path
 
+import os
+
 ROOT_DIR = Path(__file__).resolve().parents[1]
-DATA_DIR = ROOT_DIR / "data"
-DB_PATH = DATA_DIR / "dashboard.sqlite3"
+
+# Vercel serverless environment: /tmp is the only writable directory
+if os.environ.get("VERCEL") or os.environ.get("VERCEL_ENV"):
+    DATA_DIR = Path("/tmp/data")
+    DB_PATH = DATA_DIR / "dashboard.sqlite3"
+else:
+    DATA_DIR = ROOT_DIR / "data"
+    DB_PATH = DATA_DIR / "dashboard.sqlite3"
 
 
 def ensure_database() -> None:
